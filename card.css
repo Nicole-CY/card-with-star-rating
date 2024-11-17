@@ -9,22 +9,39 @@ body {
 
 /* Card styling */
 .card-container {
-    background: linear-gradient(135deg, #554dfa, #cd9eff);
-    color: #edeff2;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
     border-radius: 15px;
     padding: 30px;
     max-width: 450px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+.card-left {
+    background-color: #fff;
+    color: #363637;
+}
+
+.card-right {
+    background: linear-gradient(135deg, #554dfa, #cd9eff);
+    color: #edeff2;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
 }
 
 .profile {
     display: flex;
+    align-items: center;
 }
 
 .profile-avatar {
@@ -47,12 +64,22 @@ body {
     padding-left: 10px;
 }
 
-.company {
+.company-left {
+    font-weight: bold;
+    color: #554dfa;
+}
+
+.company-right {
     font-weight: bold;
 }
 
-.rating {
-    font-size: 16px;
+.rating-left {
+    font-size: 14px;
+    color: #ff9500;
+}
+
+.rating-right {
+    font-size: 14px;
 }
 
 .card-content {
